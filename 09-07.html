@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body{
+            height: 2000px;
+        }
+        .box1{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            /* position: static; 공간 지정태그인 top, bottom, right, left등이 없다. */
+            /*position : relative; 공간 지정태그인 top, right, bottom, left등을 붙일 수 있음*/
+            /* absolute : relative 안에 안들어 있으면 box1~3을 다주면 밑에있는 3박스가 덮어버림. 
+            absolute도 left, right, top 을 줄 수 있다. 부모 태그 안에 들어있으면 부모태그에서 시작. 부모태그가 없으면 절대좌표 0,0에서 시작*/
+            /* fixted : 브라우저를 기본으로 해서 절대 좌표를 잡고 그 위치에 고정됨 */
+        }
+        .box2{
+            background-color: #0094ff;
+            width: 200px;
+            height: 200px;
+        }
+        
+        .box3{
+            background-color: red;
+        width: 200px;
+        height: 200px;
+        }
+    
+    </style>
+</head>
+<body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>5장 css의 기초</title>
+
+        <link rel="stylesheet" href="05-01.css">
+
+        <style>
+            /* 주석 : 소스코드나 설명을 위해서 사용하는글 */
+
+            /* css 사용형태 3가지 */
+            /* 외부스타일 시트 방식 : css를 html파일 외부에 *.css파일을 생성하여 로드하는 방법 */
+            /* 내부 스타일 시트 방식 : html 파일 내부에 style 태그를 선언하고 필요한 내용을 입력해서 사용하는 방법 */
+            /* inline 방식 : html 태그에 직접 style 속성을 사용하여 css속성을 입력하는 방법 */
+
+            /* 우선순위 1 : inline > 내부 스타일 시트 > 외부 스타일 시트 */
+            /* 우선순위 2 : 밑 > 위  (html은 기본적으로 위에서 아래로 해석 : 같이 적혀있어도 위에줄 읽고 밑에줄 읽음 = 위에께 써졌다가 밑으껄로 바로 덮어짐)*/
+            p{
+                text-align: center;
+                color: blue;
+                font-size: 16px;
+            }
+            h2{
+                font-size: 20px;
+                color: orange;
+            }
+            h4{
+                color: rebeccapurple;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            h4{ color: gold;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>5장 css사용하기</h2>
+        <p>css를 사용하여 글자 디자인을 변경</p>
+        <br>
+        <h3>외부 css 파일을 이용하여 디자인을 변경</h3>
+        <h4>내부 css 방식을 이용하여 디자인을 변경</h4>
+        <h5 style="color: crimson; font-size: 20px; text-align: right; border: 1px double greenyellow;" >inline css방식을 이용하여 디자인을 변경</h5>
+        <!-- 최대한 inline은 안쓰는게 좋다 -->
+    </body>
+</html>

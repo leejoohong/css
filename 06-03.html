@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            p{
+                font-style: italic; 
+            }
+
+            p.txt{
+                font-style: normal;
+                font-size: 3em;
+            }
+            /* .txt와 p.txt, p. txt 차이*/
+            /* .txt는 class명이 txt인것만 찾음 p.txt는 p태그이면서 클래스명이 txt인걸 찾음 */
+            /* p. txt는 p태그중 후손태그로 찾는거임 차이가 있으니 주의할것 */
+        </style>
+    </head>
+    <body>
+        <h1>세계 3대 미항</h1>
+        <p>시드니(Sydney), 호주</p>
+        <p>리우 데 자네이루(Rio de Janeiro), 브라질</p>
+        <p class="txt">나폴리(Naples), 이탈리아</p>
+        <h3 class="txt">나폴리(Naples), 이탈리아</h3>
+        <!-- p.txt 를 css했기 때문에 이녀석은 먹히지 않았다. -->
+    </body>
+</html>

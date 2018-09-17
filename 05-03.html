@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style>
+    p{
+        /* 동일한 css 속성이 사용될 경우에 html 문서의 아래쪽에 있는 속성이 위에 있는 속성을 덮어씌워 사용되지만 !important 키워드를 사용하면 밑에 것이 있어도 !important라면 위에가 우선됨
+        단 밑에도 !important 키워드가 둘다 같다면 밑에걸로 덮어씌워져서 적용됨 */
+        color: red !important;
+    }
+
+     p{
+        font-style: italic;
+        color: blue;
+     }
+
+     /* 같은 p태그 사용자로 먹히게 했지만 원래라면 위에것이 적용된 후에 밑에가 먹혀서 최종적으론 파란색이 먹혀야하지만
+     중요스타일(!important)를 넣어서 중요스타일이 일반스타일보다 우선시 됨으로 위에것이 먹혔다. */
+
+     p{
+         color: green !important;
+     }
+    /* 같은 중요스타일이면 밑에것이 먹긴다. */
+    </style>
+</head>
+<body>
+    <h1>세계 3대 미항</h1>
+    <img src="../img/snow.jpg" alt="항구 대신 눈">
+    <p>시드니, 호주</p>
+    <p>리우데자네이루, 브라질</p>
+    <p>나폴리, 이탈리아</p>
+</body>
+</html>

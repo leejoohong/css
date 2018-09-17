@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <script src="prefixfree.min.js"></script>
+    
+    <style>
+        div{
+            width: 150px;
+            height: 100px;
+            background-color: chocolate;
+        }
+        .box:hover {
+            -webkit-transform: rotate(30deg); /* 크롬*/
+            -moz-transform:rotate(30deg); /* 파이어폭스 */
+            -o-transform: rotate(30deg); /* 오페라 */
+            -ms-transform: rotate(30deg); /*인터넷 익스플로러*/ 
+            transform: rotate(30deg); /*기본값*/
+        }
+        /* 원래 이렇게 다 쳐야하는걸 prefixfree.min.js를 통해서 한번에 되게끔 해줌, 기본값만 주면됨 */
+    </style>
+</head>
+<body>
+    <div class="box">mouse over</div>
+</body>
+</html>

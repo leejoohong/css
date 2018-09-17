@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+    div{
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 25px;
+    }
+    .container1{
+        /* float: left; */
+        display: inline-block;
+        box-sizing: content-box;
+    }
+    /* 기본형은 content-box */
+    .container2{
+        /* float: left; */
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    /* .container2에서 flot을 안주면 안에 들어가면 left를 주면 옆으로 정렬되고 right를 주면 오른쪽끝에 붙는다 */
+    br{display: block;}
+    hr{display: block;}
+    </style>
+</head>
+<body>
+    <h2>블록 레벨 태그..</h2>
+    <h3>시간이란..</h3>
+    <p>내일 죽을 것처럼 오늘을 살고,</p>
+    <ul>
+        <li>영원히</li>
+        <li>살것처럼</li>
+        <li>내일을</li>
+        <li>꿈꾸어라.</li>
+    </ul>
+
+    <h2>인라인 레벨 태그</h2>
+    <label for="">그림 : </label>
+    <img src="../img/choco.jpg" alt="초코">
+    <input type="text" value="한줄에 연속적으로 여러 태그를 입력 할 수 있음" >
+    <button>요렇게...</button>
+    <input type="button" value="이렇게...">
+
+    <div style="width: 500px; height: 500px; border: 2px solid black;">
+
+    </div>
+
+    <p>아이스크림 마이쪙 <span style="width: 500px; height:200px; border: 2px solid black; margin: 5px auto; ">슈퍼슈퍼 맛있어 맛있는 아이스크림</span> 사먹자 두개 사먹자</p>
+    <span style="width: 500px; height:200px; border: 2px solid black; margin: 5px auto; padding: 20px;">슈퍼슈퍼 맛있어 맛있는 아이스크림</span>
+
+    <br><br><hr><br><br>
+
+    <div class="container1">
+        <h2>container1</h2>
+    </div>
+
+    <div class="container2">
+        <h2>container2</h2>
+    </div>
+    <!-- float을 하면 display까지 같이 먹히기 떄문 -->
+    <br><br><hr><br><br>
+    <!-- display : inline-block을 주면 brhr준게 내려간다. float에서는 안내려가고 div들 사이에 끼여버렸다. -->
+</body>
+</html>

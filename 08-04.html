@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-image: url("../img/pic1.jpg");
+            box-shadow: 2px 2px 15px 15px gray;
+            border-radius: 50%;
+            border-width: 2px;
+            border-color: red blue green gold;
+            border-style: dashed double;
+        }
+        .box2{
+            margin: 20px;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-image: url("../img/pic1.jpg");
+            box-shadow: 2px 2px 15px 15px gray;
+            border-radius: 50%;
+            border-width: 2px;
+            border-color: red blue green gold;
+            border-style: dashed double;
+        }
+        .box3 > div{
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            display: inline-block;
+            /* 인라인 블럭을 주면 블럭값이 들어가는데 인라인이 들어가면 안쪽에 컨텐츠의 크기에 따라서 그 부모태그의 크기가 결정됨
+            인라인은 width, height,l margin , float 등을 무시한다. */
+            /* 뭔가 뜻대로 안되면 좌측하단에 경고메세지를 살펴보자 */
+            
+            background-image: url("../img/pic1.jpg");
+            box-shadow: 2px 2px 15px 15px gray;
+            border-radius: 50%;
+            border-width: 2px;
+            border-color: red blue green gold;
+            border-style: dashed double;
+        }
+    </style>
+</head>
+<body>
+    <!-- 문제 1 -->
+    <!-- 1. div 태그를 이용하여 원형 크기가 가로 세로 200px의 크기의 원형 태그를 만들고  -->
+    <!-- 2. 가로 세로 크기가 같아야하고 타원은 안됨 -->
+    <!-- 3. 원의 테두리는 점선이나 2중선이며 색상은 아무거나 굵기는 2px -->
+    <!-- 4. 박스의 그림자도 사용 -->
+    <div class="box1">
+    </div>
+    <br><hr><br>
+    <!-- 문제2 -->
+    <!-- 문제 1번에서 만든 원을 5개 만들고 가로로 나열하기 -->
+    <!-- 1. display 속성을 사용하여 원을 가로로 나열 -->
+    <!-- 2. 각 원 사이의 거리를 최소 10px이상 줘야함 -->
+    <div class="box2">
+    </div>
+    <div class="box2">
+    </div>
+    <div class="box2">
+    </div>
+    <div class="box2">
+    </div>
+    <div class="box2">
+    </div>
+    <br><hr><br>
+    <div class="box3">
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+    </div>
+</body>
+</html>

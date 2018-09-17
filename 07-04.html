@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        #bg1{
+            background-image: url("../img/choco.jpg");
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding : 150px 50px 50px 50px;
+
+            background-origin: border-box;
+            background-attachment: fixed;
+            /* 이미지가 박혀있고 스크롤 내려도 내려가지 않는다. 원래는 스크롤이 기본값으로 내려가거나 올라갈 때 따라온다. */
+
+            background-color: darkcyan;
+            border : 30px dashed black;
+            width : 500px;
+            height : 500px;
+        }
+        #bg2{
+            background-image: url("../img/choco.jpg");
+            background-repeat: no-repeat;
+            background-position: 0% 100%;
+            background-color: cadetblue;
+
+            background-origin: content-box;
+
+            border: 30px dashed black;
+            width : 500px;
+            height : 500px;
+            padding : 50px;
+        }
+        /* center center라서 하나로 처리 */
+        #bg3{
+            /* background-image: url("../img/choco.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: right bottom; */
+            /* 이렇게 따로 설정되는것을 background라는 속성에 속성값만 넣어서 한줄로 만듦 */
+            background: url("../img/choco.jpg") no-repeat fixed left bottom;
+            border: 30px dashed black;
+            width : 500px;
+            height : 500px;
+            padding : 50px;
+        }
+        /* div는 한줄로 나오는 건데 지금 width랑 height를 줘서 그 부분만 나오게 한다. 하지만 fix는 거기에 박혀있는거라서 width가 그 만큼 안 가면 잘려나온다. */
+    </style>
+</head>
+<body>
+    <div id="bg1">
+        <h1>초콜릿(Chocolate)</h1>
+        <p>초콜릿은 카카오 콩을 재료로 가공한 식품이다. 숙성한 카카오 콩을 볶은 뒤 이를 갈아서 만든 카카오 매스와 지방 성분만으로 만들어진 코코아 버터를 혼합하여 만드는데,
+                설탕 등의 다른 재료를 더 넣어 만들기도 한다. 카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분된다.</p>
+    </div>
+    <br><br><br>
+    <div id="bg2">
+        <h1>초콜릿(Chocolate)</h1>
+        <p>초콜릿은 카카오 콩을 재료로 가공한 식품이다. 숙성한 카카오 콩을 볶은 뒤 이를 갈아서 만든 카카오 매스와 지방 성분만으로 만들어진 코코아 버터를 혼합하여 만드는데,
+        설탕 등의 다른 재료를 더 넣어 만들기도 한다. 카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분된다.</p>
+        <p>초콜릿은 카카오 콩을 재료로 가공한 식품이다. 숙성한 카카오 콩을 볶은 뒤 이를 갈아서 만든 카카오 매스와 지방 성분만으로 만들어진 코코아 버터를 혼합하여 만드는데,
+        설탕 등의 다른 재료를 더 넣어 만들기도 한다. 카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분된다.</p>
+       </p>
+    </div>
+    <br>
+    <div id="bg3">
+        <h1>초콜릿(Chocolate)</h1>
+        <p>초콜릿은 카카오 콩을 재료로 가공한 식품이다. 숙성한 카카오 콩을 볶은 뒤 이를 갈아서 만든 카카오 매스와 지방 성분만으로 만들어진 코코아 버터를 혼합하여 만드는데,
+        설탕 등의 다른 재료를 더 넣어 만들기도 한다. 카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분된다.</p>
+    </div>
+    <br><br><br>
+</body>
+</html>

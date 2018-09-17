@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+    #container1  ul{
+        border: 1px dotted blue;
+    }
+    /* #container안에 들어가는 ul은 모두 border 1px. dotted blue로 먹인다. 고로 여기선 세개가 먹힘 */
+    /* #container > ul이라면 자식선택자라서 자손요소에게만 스타일이 적용됨 고로 여기선 한개만 적용 */
+    #container2 > ul{border: 1px dotted blue;}
+    </style>
+</head>
+<body>
+    <section id="container1">
+        <header>
+            <h1>예약 방법 및 요금</h1>
+        </header>
+        <p>요안도라에 예약하려면?</p>
+        <ul>
+            <li>예약방법</li>
+            <ul>
+                <li>직접 통화</li>
+                <li>문자 남기기</li>
+            </ul>
+        <li>요금
+        <ul>
+            <li>1인 : 40,000원</li>
+            <li>2인 : 60,000원</li>
+            <li>3인 : 80,000원</li>
+            <li>4인 : 100,000원</li>
+        </ul>
+        </li>
+         </ul>
+    </section>
+    <br><hr><br>
+    <section id="container2">
+            <header>
+                <h1>예약 방법 및 요금</h1>
+            </header>
+            <p>요안도라에 예약하려면?</p>
+            <ul>
+                <li>예약방법</li>
+                <ul>
+                    <li>직접 통화</li>
+                    <li>문자 남기기</li>
+                </ul>
+            <li>요금
+            <ul>
+                <li>1인 : 40,000원</li>
+                <li>2인 : 60,000원</li>
+                <li>3인 : 80,000원</li>
+                <li>4인 : 100,000원</li>
+            </ul>
+            </li>
+             </ul>
+        </section>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+    .box1{
+        box-sizing: content-box;
+        width: 300px; height: 150px;
+        margin: 10px;
+        padding : 30px;
+        border: 2px solid red;
+    }
+    /* content-box는 width와 height의 크기가 컨텐츠 영역의 크기가 됨 나머지 영역은 크기를 따로 계산함 */
+
+    .box2{
+        box-sizing: border-box;
+        width: 300px; height: 150px;
+        margin: 42px;
+        padding : 30px;
+        border: 2px solid red;
+    }
+    /* border-box는 width와 height의 크기가 컨텐츠영역+ 패딩영역+ 보더영역 까지 다 합쳐서 그 크기가 나오게 한다. */
+    /* margin은 크기에 영향을 주지 않음 */
+    </style>
+</head>
+<body>
+    <div class="box1">content-box</div>   
+    <div class="box2">border-box</div>
+</body>
+</html>

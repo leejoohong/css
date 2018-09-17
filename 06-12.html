@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        /* 하나의 html 태그는 여러개의 클래스명을 가질 수 있음 */
+        p{
+            font-size: 2em;
+        }
+        .indent1{
+            text-indent: 15px;
+        }
+        /* 내가 띄우고 싶은 만큼 띄워진다. 고정형 */
+        .indent2{
+            text-indent: 5%;
+        }
+        /* 화면이 크던지 작던지 퍼센테이지에 맞춰서 바뀜 가변형 부모요소 너비의 5%만큼 띄움 */
+        .small-line{
+            line-height: 0.7;
+        }
+        .big-line{
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    <p>블루베리는 비타민 A, C, E가 풍부하고 ... ...</p>
+    <p class="indent1 small-line">블루베리는 비타민 A, C, E가 풍부하고 안토니시아민, 페놀 등이 활성 산소를 없애 노화를 억제하고 블루베리의 안토니시아민은 
+        눈의 피로와 시력 저하를 회복시키는 효능을 가지기도 한다.</p>
+    <p class="indent2 big-line">블루베리는 비타민 A, C, E가 풍부하고 안토니시아민, 페놀 등이 활성 산소를 없애 노화를 억제하고 블루베리의 안토니시아민은 
+        눈의 피로와 시력 저하를 회복시키는 효능을 가지기도 한다.</p>
+</body>
+</html>

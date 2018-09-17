@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        /*참고 w3schools color picker
+         https://www.w3schools.com/colors/colors_picker.asp 색상표를 확인할 수 있다 */
+        h1{
+            color: rgb(0, 200, 0);
+        }
+        /* 색상을 숫자로 표현하는 방식 */
+        /* 앞에서 부터 순서대로 red, green, blue의 순 */
+        /* 값은 0~255까지 */
+        h2{
+            color: blue;
+        }
+        /* 색상을 기본으로 정해놓은 색상 단어를 사용하여 표현 */
+        .accent{
+            color: #ff0000;
+        }
+        /*색상을 나타내는 기본방식 */
+        /* 2자리 16진수(00~ff/0~255)를 이용하여 색상을 표시*/
+        /* 앞에서 부터 red, green, blue 순으로 나타난다 */
+        .color1{
+            font-size: 3em;
+            color: rgba(0, 200, 0, 0.9);
+        }
+        /* 기본 rgb 색상표에서 투명도를 추가한 방식 */
+        /* alpha는 투명도를 나타낸다. 0.0~1.0까지 사용 */
+        .color2{
+            font-size: 3em;
+            color: hsla(248, 50%, 50%, 0.5);
+        }
+        /* 색조, 채도, 명도, 투명도 */
+        /* 이건 거의 안쓰고 실제 사용은 rgba까지만 생각해놓으면 된다. */
+    </style>
+</head>
+<body>
+    <h1>세계 10대 슈퍼푸드</h1>
+    <img src="../img/garlic.jpg" alt="마늘" width="200" height="200">
+    <h2>마늘(Garic)</h2><p>일해백리(一害百利)는 마늘의 별명이다. 한가지 해가 있고 백가지 이로움이 있다는 뜻이다. 그 한가지 해란, 아린 맛으로 인해 위에 부담을 준다는 것이다.</p>
+    <p>마늘 특유의 아린맛은 <span class="accent">알리신</span>이라는 성분 때문으로, 살균 및 향균 작용을 하여 마늘에 들어 있는 아연이 피로 회복에 도움을 준다.</p>
+
+    <p class="color1">글자 색을 바꾸는 방법 추가 1</p>
+    <p class="color2">글자 색을 바꾸는 방법 추가 2</p>
+</body>
+</html>

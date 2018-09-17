@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>스타일 상속</title>
+    <style>
+        body{
+            font-family: "돋움";
+            color: darkgreen;
+            background-color: cornflowerblue;
+        }
+        div{
+            border: 2px solid black;
+            font-size: 30px;
+        }
+
+        #div01{
+            color: red;
+        }
+        #div02{
+            color: darkorange;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>뉴욕타임즈에서 발표한 세계 10대 슈퍼푸드</h1>
+    <ul>
+        <li>블루베리</li>
+        <li>귀리</li>
+        <li>토마토</li>
+        <li>시금치</li>
+        <li>적포도주</li>
+        <li>견과류</li>
+        <li>브로콜리</li>
+        <li>연어</li>
+        <li>마늘</li>
+        <li>녹차</li>
+    </ul>
+
+    <div id="div01">
+        <p>공간 태그를 사용하여 스타일 상속테스트</p>
+
+        <div id= "div02">
+            <p>div 01에서 스타일을 상속받음</p>
+
+            <div id="div03">
+                <p>div02에서 스타일을 상속 받음</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

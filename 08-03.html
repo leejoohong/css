@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin: 15px;
+            border-width: 5px;
+        }
+    .box1{border-style: dashed;}
+    .box2{border-style: dotted;}
+    .box3{border-style: double;}
+    .box4{border-style: groove;}
+    .box5{border-style: inset;
+        border-collapse: separate;}
+    .box6{border-style: outset;
+        border-collapse: separate;}
+    .box7{border-style: ridge;}
+    .box8{border-style: solid;}
+    .box9{border-style: none;}
+    .box10{border-width: 2px;
+        border-style: solid;}
+    .box11{border-width: thin thick;
+        border-style: solid;}
+    /* 2개의 속성값은 (상하)(좌우) */
+    .box12{border-width: 5px 10px thin thick ;
+    border-style: solid;}
+    /* 4개의 속성값은 상우하좌의 시계방향 순 */
+    .box13{
+        border-style: solid;
+        border-color: lightseagreen;
+    }
+    /* border-coloer도 상하좌우에 따로 색상 지정가능 */
+    .box14{
+        border-style: solid;
+        border-color: lightseagreen red;
+    }
+    .box15{
+        border-style: solid;
+        border-color: lightseagreen red blue gold;
+    }
+    .box16{
+        border :  thin dashed  red ;
+    }
+    .box17{
+        border: 5px solid lightblue;
+        border-radius: 20px;
+        background-image: url("../img/pic1.jpg");
+        background-size : cover;
+    }
+    .box18{
+        width: 100px;
+        height: 100px;
+        border: 5px solid lightblue;
+        border-radius: 50%;
+        /* 50%가 가장 원형에 가깝고 그 이상은 의미가 없다. */
+        background-image: url("../img/pic1.jpg");
+        background-size : cover;
+    }
+    .box19{
+        border-style: dashed dotted solid dashed;
+        border-color: red blue green gold;
+        border-width: thin thick 15px 20px;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        background-size : cover;
+        background-image: url("../img/pic3.jpg");
+        text-align: center;
+        position: relative;
+    }
+    .box20{
+        position: absolute;
+        left: 35px;
+        top: 135px;
+    }
+    .box21{
+        box-shadow: 2px -2px 5px 0px black;
+        border-radius : 20px;
+    }
+    /* 수평거리, 수직거리, 흐림, 번짐, 색상 순 */
+    /* 수평거리의 +는 우측, -는 좌측 방향*/
+    /* 수직거리의 +는 하단, -는 상단 방향 */
+
+    .box22{
+        box-shadow: 5px 5px 15px 15px gray;
+        border-radius : 20px;
+    }
+    /* 수평, 수직이 0px 0px이라면 박스밑에 사방향으로 그림자가 드리운다. */
+    </style>
+</head>
+<body>
+    <div class="box1">dashed</div>
+    <div class="box2">dotted</div>
+    <div class="box3">double</div>
+    <div class="box4">groove</div>
+    <div class="box5">inset</div>
+    <div class="box6">outset</div>
+    <div class="box7">ridge</div>
+    <div class="box8">solid</div>
+    <div class="box9">none</div>
+    <div class="box10">border-width1</div>
+    <div class="box11">border-width2</div>
+    <div class="box12">border-width3</div>
+    <div class="box13">border-color1</div>
+    <div class="box14">border-color2</div>
+    <div class="box15">border-color3</div>
+    <div class="box16"> border 통합해서 쓰기 </div>
+    <div class="box17"> border-radius px</div>
+    <div class="box18"> border-radius %</div>
+    <div class="box19"> 
+        <div class="box20">
+                <a href="http://www.naver.com" target="_blank">border 슈퍼종합</a>
+        </div>
+    </div>
+    <p>border속성(종합하는거)은 속성은 테두리, 칼라, 스타일 등 세개를 먹일 수 있고 각 속성당 속성값을 한 개씩만 쓸 수 있다</p>
+    <div class="box21">box-shadow 1</div>
+    <div class="box22">box-shadow 2</div>
+</body>
+</html>

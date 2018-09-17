@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>로렘입숨을 이용한 3단레이아웃</title>
+    <meta charset="utf-8">
+    <style>
+        #container{
+            width: 960px;
+            padding : 20px;
+            margin : 0 auto;
+        }
+        div{
+            border: 1px solid #ccc;
+        }
+        #header{
+                padding: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                background-color: rgb(244, 241, 247);
+                color: purple;
+                border-style: double;
+                border-color: blue;
+        }
+        #left-sidebar{
+            width: 150px;
+            float: left;
+            margin-bottom: 20px;
+            margin-right : 20px;
+        }
+        #contents{
+                  width: 490px;
+                  padding: 20px;
+                  margin-left: 44px;
+                  margin-bottom: 20px;
+                  float: left;
+                  text-align: center;
+        }
+        #right-sidebar{
+            width: 150px;
+            float: right;
+            margin-bottom: 20px;
+        }
+        #footer{
+            clear: both;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="header"><h1>사이트 제목</h1></div>
+    <div id="left-sidebar">
+        <h2>사이드바1</h2>
+            <ul>
+                <li>항목 1</li>
+                <li>항목 2</li>
+                <li>항목 3</li>
+                <li>항목 4</li>
+            </ul>
+    </div>
+    <div id="contents"><h2>본문</h2>
+        <p>국무총리·국무위원 또는 정부위원은 국회나 그 위원회에 출석하여 국정처리상황을 보고하거나 의견을 진술하고 질문에 응답할 수 있다. 
+            국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 
+            국무위원 또는 정부위원으로 하여금 출석·답변하게 할 수 있다.</p>
+        <p>법관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니하며, 
+            징계처분에 의하지 아니하고는 정직·감봉 기타 불리한 처분을 받지 아니한다. 행정권은 대통령을 수반으로 하는 정부에 속한다. 
+            국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다.</p>
+    </div>
+    <div id="right-sidebar">
+        <h2>사이드바2</h2>
+            <ul>
+                <li>항목 1</li>
+                <li>항목 2</li>
+                <li>항목 3</li>
+                <li>항목 4</li>
+            </ul>
+    </div>
+    <div id="footer">
+        <h2>푸터</h2>
+        <p>모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다.</p>
+    </div>
+    </div>
+</body>
+</html>

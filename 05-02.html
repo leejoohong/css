@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+        /* '선택자'는 css 속성을 적용하기 위하여 html태그를 선택하기 위한 기호 */
+        /* 예전에는 전부다 inline방식을 써서 선택자라는게 없었으나 html과 css가 분리되면서 어떤 부분의 태그를 변경해야하는지 모르닌깐 찾기위해서 생긴 개념 */
+        
+        /* 전체선택자 : 기호는 '*'이고 html 문서의 모든 태그에 적용 : html의 공간태그나 css의 박스관련 속성에 쓴다. */
+        
+        *{
+          margin: 0px;
+          padding: 0px;
+        }
+        /* 전체에서 전체선택자(*)를 써서 마진과 패딩을 0으로 줄인거 */
+
+
+        /* html 태그명을 그대로 사용, 해당하는 모든 html태그에 속성을 적용함 */
+        p{
+            font-size: 16px; 
+            margin-left:20px;
+        }
+        /* p에 태그선택자로 써서 내부 스타일을 먹인거 */
+        
+        /* id 선택자 : html 태그의 id 속성을 사용하여 선택, 해당하는 id명을 사용한 html 태그에 css 속성을 적용, 기호는 #을 사용 */
+        
+        #container{
+            background-color: lemonchiffon;
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        
+        div {
+            background-color: blueviolet;
+            width: 200px;
+            height: 100px;
+        }
+
+        /* class 선택자 : html 태그의 class 속성을 사용하여 선택, 해당하는 class명을 사용한 모든 html 태그에 css 속성을 적용, 기호는 .을 사용 */
+        /* 태그의 종류에 상관없이 class명만 같으면 거기에 관한 명령을 다 먹임 */
+        .bluetext{
+            color: blue;
+            background-color: deeppink;
+        }
+
+        /* 그룹선택자 : css 속성이 같을 경우 선택자를 쉼표(,)를 사용하여 여러개 연속적으로 사용할 수 있음, 모든 선택자(class나 id도)를 그룹화하여 사용할 수 있음 */
+        h1, h2, h3, h4{
+            background-color: cornflowerblue;
+            color: darkblue;
+            margin: 10px;
+        }
+        /* 원래는  */
+
+        /* h1{
+            background-color: cornflowerblue;
+            color: darkblue;
+            margin: 10px;
+        } */
+        /* h2{
+            background-color: cornflowerblue;
+            color: darkblue;
+            margin: 10px;
+        } */
+        /* h3{
+            background-color: cornflowerblue;
+            color: darkblue;
+            margin: 10px;
+        } */
+        /*  h4{
+            background-color: cornflowerblue;
+            color: darkblue;
+            margin: 10px;
+        } 로 되어있는 것을 이렇게 묶은거*/
+        </style>
+    </head>
+    <body>
+        <h1>블루베리에 관한 연구</h1>
+        <h2 class="bluetext">블루베리와 황산화 효능</h2>
+        <p class="bluetext">블루베리는 ... ... 합니다.</p>
+        <!-- h2와 p는 태그는 다르지만 둘 다 class명이 같아서 같은 class속성이 먹힌거 -->
+        <P>메사츄세츠 보스톤에 ... ... 과일이라고 합니다.</P>
+        <!-- 여기는 class를 주지 않았다. 그래서 class의 속성은 먹지 않았다. 그러나 태그선택자로 p가 먹혀있어서 폰트는 16px, 마진레프트는 20px이 된거 -->
+        <br>
+        
+        <h2>블루베리와 노화</h2>
+        <p>USDA ... ... 발견하였습니다.</p>
+        
+        <br>
+       
+        <h3>블루베리 마시쩡..</h3>
+        <h4>그런데 비싸. ㅠ.ㅠ</h4>
+
+        <div id="container">
+
+        </div>
+        <!-- 태그선택자가 밑에 있어도 id가 더 우선시 되는것을 볼 수 있다. -->
+        <br>
+        <div>
+
+        </div>
+        <!-- 얘는 id를 주지 않아서 안먹혔다 그러나 태그선택자의 속성이 먹힘 -->
+
+        <br>
+
+        <ul> 부모 태그
+                <li>아메리카노</li> li는 ul의 후손태그이자 자손태그
+                <li>에스프레소</li>
+                <li>카페라떼</li>
+                <li>
+                    <a href="">링크</a> ul의 후손태그이자 li의 자손태그
+                </li>
+        </ul>
+    </body>
+</html>

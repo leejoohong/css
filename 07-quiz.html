@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        .container1 h1 {font-size: 17px;}
+        .container1 p{ font-size: 16px;
+            line-height: 25px;    
+        }
+        /* 조건 1-1,2,3*/
+        .container1{
+            background-color: rgba(0, 0, 255, 0.2);
+            border: 1px solid blue;
+            width: 500px;
+            padding : 10px;
+        }
+        .container2{
+            background-color: rgba(0,0,255,0.2);
+            border: 1px solid blue;
+            width: 500px;
+            padding : 10px;  
+        }
+        /* 조건 2-1,2,3 */
+        .container2:hover{
+            background-color: blue;
+            color: #fff;
+            width: 500px;
+            padding : 10px;
+        }
+        .container2 h1 {font-size: 17px;}
+        .container2 p{ font-size: 16px;
+            line-height: 25px;    
+        }
+
+        /* 조건 3-1, 2 */
+        .container3{
+            width: 600px;
+            height: 488px;
+            padding : 10px;
+            position: relative;
+            border : 1px solid #ccc;
+            background-image: url("../img/apple2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* 조건 3-1, 3 */
+        .content  {
+            position: absolute;
+            top : 380px;
+            left : 21px;
+            width: 90%;
+            padding : 10px; 
+            background-color: rgba(255, 255, 255, 0.5);
+            }
+        
+        .container3 h1{ font-size: 30px;
+            text-align : center;   
+        }
+        .container3 p{ font-size: 16px;
+            line-height: 25px;    
+        }
+    </style>
+</head>
+<body>
+    <!-- 1번 문제 -->
+    <div class="container1">
+    <h3>웹 디자인 트렌드를 따라잡는 비법 대공개!</h3>
+    <br>
+    <p>그래픽 프로그램으로 웹 디자인 요소를 일일이 만들어 웹사이트를 제작하는 시대는 지났다.
+    이제 모바일, 태블릿, pc 등 멀티 디바이스에 한 번에 적용할 수 있는 웹 디자인 방법을 알아야 한다.
+    바로 <b>코딩을 이용한 웹 디자인</b>이다.
+    </p>
+    </div>
+    <br>
+    <!-- 2번 문제 -->
+    <div class="container2">
+        <h3>웹 디자인 트렌드를 따라잡는 비법 대공개!</h3>
+        <br>
+        <p>그래픽 프로그램으로 웹 디자인 요소를 일일이 만들어 웹사이트를 제작하는 시대는 지났다.
+        이제 모바일, 태블릿, pc 등 멀티 디바이스에 한 번에 적용할 수 있는 웹 디자인 방법을 알아야 한다.
+        바로 <b>코딩을 이용한 웹 디자인</b>이다.
+    </div>
+    <br>
+    <!-- 3번 문제 -->
+    <div class="container3">
+        <div class="content">
+            <h1>하루 한 알의 사과는 의사를 멀리 한다</h1>
+        </div>
+    </div>
+    <br>
+</body>
+</html>

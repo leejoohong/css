@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>2단 레이아웃 만들기</title>
+    <!-- http://guny.kr/stuff/klorem/ -->
+    <!-- 로렘입숨 - 의미없이 내용을 채워주는것 -->
+    <style>
+        div{
+            border: 1px solid #ccc;
+        }
+        #container{
+            width: 960px;
+            padding : 20px;
+            margin : 0 auto;
+        }
+        #header{
+            padding : 20px;
+            margin-bottom: 20px;
+        }
+        #contents{
+            width: 650px;
+            padding : 20px;
+            float : left;
+            margin-bottom: 20px;
+        }
+        #sidebar{
+            width: 220px;
+            padding: 20px;
+            float: right;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        #footer{
+            clear: both;
+            padding : 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="header">
+        <h1>사이트 제목</h1>
+    </div>
+    <div id="sidebar">
+        <h2>사이드바</h2>
+        <ul>
+            <li>모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 
+                적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다.</li>
+        </ul>
+    </div>
+    <div id="contents">
+        <h2>본문</h2>
+        <p>국회의원은 국회에서 직무상 행한 발언과 표결에 관하여 국회외에서 책임을 지지 아니한다. 
+            저작자·발명가·과학기술자와 예술가의 권리는 법률로써 보호한다. 
+            의원을 제명하려면 국회재적의원 3분의 2 이상의 찬성이 있어야 한다. 
+            국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 시장의 지배와 경제력의 남용을 방지하며, 
+            경제주체간의 조화를 통한 경제의 민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다.</p>
+
+        <p>대통령은 제4항과 제5항의 규정에 의하여 확정된 법률을 지체없이 공포하여야 한다. 
+            제5항에 의하여 법률이 확정된 후 또는 제4항에 의한 확정법률이 정부에 이송된 후 5일 이내에 대통령이 공포하지 
+            아니할 때에는 국회의장이 이를 공포한다. 피고인의 자백이 고문·폭행·협박·구속의 부당한 장기화 또는 기망 기타의 
+            방법에 의하여 자의로 진술된 것이 아니라고 인정될 때 또는 정식재판에 있어서 피고인의 자백이 그에게 불리한 유일한 
+            증거일 때에는 이를 유죄의 증거로 삼거나 이를 이유로 처벌할 수 없다.</p>
+    </div>
+    <div id="footer">
+        <h2>푸터</h2>
+        <p>대법원장의 임기는 6년으로 하며, 중임할 수 없다. 신체장애자 및 질병·노령 기타의 사유로 생활능력이 없는 국민은 법률이 정하는 바에 의하여 국가의 보호를 받는다.</p>
+    </div>
+    </div>
+</body>
+</html>

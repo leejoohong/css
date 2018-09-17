@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        /* position의 속성 값은 총 4가지 */
+        /* static, relative, absolute, fixed */
+        /* static과 relative는 기본 형태(바로 앞에있었던 태그 기준해서 위치)가 같고 absolute와 fixted는 기본 형태(바로 앞에 있는 태그를 상관안함)가 같다. */
+        /* statice과 relative는 둘 다 이전 태그가 끝나는 위치를 기준으로 하여 새로운 태그를 화면에 표시함 */
+        /* absolute와 fixed는 절대 좌표를 기준으로 하여 새로운 태그를 화면에 표시함 */
+        /* static을 제외한 relative, absolute, fixed는 위치제어 속성 top, right, bottom, left를 사용하여 새로운 태그를 화면에 표시함 */
+        /* absoulute는 절대 좌표를 기반으로 태그를 표시. relative 안 일 때는 부모태그의 시작지점을 자신의 시작지점으로 사용함 */
+        /* fixed는 절대좌표를 기반으로 태그를 표시하지만 브라우저 화면0(.0)을 기반으로 하여 자신의 시작 지점을 사용함 */
+        /* fixed는 스크롤이나 화면의 크기에 상관없이 같은 지점에 늘 표시됨 */
+        /* z-index는 화면등이 겹칠떄 쓰며 순서를 정한다 */
+
+        /* div{
+            padding : 20px;
+            width: 200px;
+            height: 200px;
+            position: static;        
+        } */
+        .box1{
+            /* position: static; */
+            /* 기본값은 포지션 스태틱 */
+            /* float: left; */
+            background-color: yellow;
+            /* margin-right: 10px; */
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        /* 좌측 상단에서 시작을한다. (0,0) */
+        .box2{
+                /* 위치 지정 속성을 사용하여 원래 표시해야할 위치에서 다른 곳으로 이동하여 태그를 표시함 */
+
+
+            /* position: relative; */
+            /* relative의 시작위치(0,0)는 똑같음 그런데 left, right, top, bottom의 네가지 속성으로 위치를 조절할 수 있다. */
+            /* left: -50px;
+            top: 30px; */
+            /* float: left; */
+            background-color: #0094ff;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 100px;
+            top : 100px;
+        }
+        /* 기본값 스태틱을 줬다면 (0,200)에서 생기는 거 */
+        /* relative를 주면 left, top, bottom, right의 속성을 써서 좌표를 이동하는 것이 가능해진다. */
+        .box3{
+            background-color: red;
+        /* 포지션 스태틱이라면 (0,400)에서 시작 */
+        width: 500px;
+        height: 500px;
+        position: relative;
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+            background-color: #5db455;
+            position: absolute;
+            /* position: fixed; */
+            /* 부모태그의 시작위치와 자식태그의 시작위치가 같아진다. */
+            /* relative나 static이면 부모태그의 끝위치에서 시작됨 */
+            top: 200px;
+            left : 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">
+        <!-- <h3>박스3</h3> -->
+        <div class="box4">박스4</div>
+    </div>
+    <div class="box4">박스5</div>
+    <br>
+    <br><br><br><br><br>
+</body>
+</html>
